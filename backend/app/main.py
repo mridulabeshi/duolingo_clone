@@ -22,8 +22,9 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://duolingo-clone-mrid1.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
